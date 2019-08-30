@@ -1,7 +1,7 @@
 const fs = require("fs");
 const http = require("http");
 const url = require("url");
-const PORT = process.env.PORT || 1337;
+// const PORT = process.env.PORT || 1337;
 
 const json = fs.readFileSync(`${__dirname}/data/data.json`, "utf-8");
 
@@ -67,8 +67,8 @@ const server = http.createServer((req, res) => {
   }
 });
 
-server.listen(PORT, "127.0.0.1", () => {
-  console.log(`Listening for requests now ${PORT}`);
+server.listen(process.env.PORT || 1337, "127.0.0.1", () => {
+  console.log(`Listening for requests no\`);
 });
 
 function replaceTemplate(originalHTML, laptop) {
