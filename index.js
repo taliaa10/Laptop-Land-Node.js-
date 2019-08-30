@@ -68,7 +68,7 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(process.env.PORT || 1337, "127.0.0.1", () => {
-  console.log(`Listening for requests no\`);
+  console.log(`Listening for requests now');
 });
 
 function replaceTemplate(originalHTML, laptop) {
